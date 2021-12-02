@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.10.0 on win32)" generated="20211127 15:31:48.442" rpa="false" schemaversion="2">
+<suite id="s1" name="Gherkins" source="C:\Users\HP_Owner\PycharmProjects\python_robotframework\Gherkins.robot">
+<test id="s1-t1" name="Addition">
+<kw name="Given calculator has been cleared">
+<kw name="Push Button" library="CalculatorLibrary">
+<arg>C</arg>
+<doc>Pushes the specified ``button``.
+The given value is passed to the calculator directly. Valid buttons
+are everything that the calculator accepts.
+Examples:
+| Push Button | 1 |
+| Push Button | C |
+Use `Push Buttons` if you need to input longer expressions.</doc>
+<status status="PASS" starttime="20211127 15:31:48.473" endtime="20211127 15:31:48.473"/>
+</kw>
+<status status="PASS" starttime="20211127 15:31:48.472" endtime="20211127 15:31:48.473"/>
+</kw>
+<kw name="When user types &quot;1 + 1&quot;" sourcename="User types &quot;${expression}&quot;">
+<kw name="Push Buttons" library="CalculatorLibrary">
+<arg>${expression}</arg>
+<doc>Pushes the specified ``buttons``.
+Uses `Push Button` to push all the buttons that must be given as
+a single string. Possible spaces are ignored.
+Example:
+| Push Buttons | 1 + 2 = |</doc>
+<status status="PASS" starttime="20211127 15:31:48.473" endtime="20211127 15:31:48.473"/>
+</kw>
+<status status="PASS" starttime="20211127 15:31:48.473" endtime="20211127 15:31:48.473"/>
+</kw>
+<kw name="and user pushes equals">
+<kw name="Push Button" library="CalculatorLibrary">
+<arg>=</arg>
+<doc>Pushes the specified ``button``.
+The given value is passed to the calculator directly. Valid buttons
+are everything that the calculator accepts.
+Examples:
+| Push Button | 1 |
+| Push Button | C |
+Use `Push Buttons` if you need to input longer expressions.</doc>
+<status status="PASS" starttime="20211127 15:31:48.474" endtime="20211127 15:31:48.474"/>
+</kw>
+<status status="PASS" starttime="20211127 15:31:48.474" endtime="20211127 15:31:48.474"/>
+</kw>
+<kw name="Then result is &quot;2&quot;" sourcename="Result is &quot;${result}&quot;">
+<kw name="Result Should Be" library="CalculatorLibrary">
+<arg>${result}</arg>
+<doc>Verifies that the current result is ``expected``.
+Example:
+| Push Buttons     | 1 + 2 = |
+| Result Should Be | 3       |</doc>
+<status status="PASS" starttime="20211127 15:31:48.475" endtime="20211127 15:31:48.475"/>
+</kw>
+<status status="PASS" starttime="20211127 15:31:48.474" endtime="20211127 15:31:48.475"/>
+</kw>
+<status status="PASS" starttime="20211127 15:31:48.472" endtime="20211127 15:31:48.475"/>
+</test>
+<doc>Example test case using the gherkin syntax.
+
+This test has a workflow similar to the keyword-driven
+examples. The difference is that the keywords use higher
+abstraction level and their arguments are embedded into
+the keyword names.
+
+This kind of _gherkin_ syntax has been made popular by
+[http://cukes.info|Cucumber]. It works well especially when
+tests act as examples that need to be easily understood also
+by the business people.</doc>
+<status status="PASS" starttime="20211127 15:31:48.444" endtime="20211127 15:31:48.476"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Gherkins">Gherkins</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

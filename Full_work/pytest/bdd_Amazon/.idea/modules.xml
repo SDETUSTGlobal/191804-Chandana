@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Pytest_Amazon/.idea/Pytest_Amazon.iml" filepath="$PROJECT_DIR$/../Pytest_Amazon/.idea/Pytest_Amazon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/bdd_Amazon.iml" filepath="$PROJECT_DIR$/.idea/bdd_Amazon.iml" />
+    </modules>
+  </component>
+</project>

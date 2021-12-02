@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  
+  <web-app>
+   <listener>
+      <listener-class>
+         com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+      </listener-class>
+   </listener>
+	
+   <servlet>
+      <servlet-name>hello</servlet-name>
+      <servlet-class>com.sun.xml.ws.transport.http.servlet.WSServlet</servlet-class>
+      <load-on-startup>1</load-on-startup>
+   </servlet>
+	
+   <servlet-mapping>
+      <servlet-name>hello</servlet-name>
+      <url-pattern>/hello</url-pattern>
+   </servlet-mapping>
+	
+   <session-config>
+      <session-timeout>120</session-timeout>
+   </session-config>
+	
+</web-app>
+<endpoints
+   xmlns = "http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+   version = "2.0">
+   
+   <endpoint name = "HelloWorld" 
+      implementation = "com.training.ws.HelloWorldImpl" 
+      url-pattern = "/hello"/>
+</endpoints>
+
+  
+  <groupId>webservice</groupId>
+  <artifactId>webservice</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.5.1</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+</project>

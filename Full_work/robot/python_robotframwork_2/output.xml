@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.1.2 (Python 3.8.6 on win32)" generated="20211127 15:58:13.581" rpa="false" schemaversion="2">
+<suite id="s1" name="Tests" source="C:\Users\HP_Owner\PycharmProjects\python_robotframwork_2\tests">
+<suite id="s1-s1" name="Glogin" source="C:\Users\HP_Owner\PycharmProjects\python_robotframwork_2\tests\Glogin.robot">
+<test id="s1-s1-t1" name="Valid Login">
+<kw name="Given browser is opened to login page">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<msg timestamp="20211127 15:58:13.622" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20211127 15:58:13.622" endtime="20211127 15:58:13.622"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20211127 15:58:13.623" endtime="20211127 15:58:13.623"/>
+</kw>
+<kw name="Set Selenium Speed">
+<arg>${DELAY}</arg>
+<status status="NOT RUN" starttime="20211127 15:58:13.625" endtime="20211127 15:58:13.625"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20211127 15:58:13.625" endtime="20211127 15:58:13.625"/>
+</kw>
+<status status="FAIL" starttime="20211127 15:58:13.620" endtime="20211127 15:58:13.626"/>
+</kw>
+<status status="FAIL" starttime="20211127 15:58:13.620" endtime="20211127 15:58:13.626"/>
+</kw>
+<kw name="When user &quot;demo&quot; logs in with password &quot;mode&quot;" sourcename="User &quot;${username}&quot; logs in with password &quot;${password}&quot;">
+<status status="NOT RUN" starttime="20211127 15:58:13.627" endtime="20211127 15:58:13.627"/>
+</kw>
+<kw name="Then welcome page should be open" library="resource">
+<status status="NOT RUN" starttime="20211127 15:58:13.627" endtime="20211127 15:58:13.627"/>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg timestamp="20211127 15:58:13.629" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20211127 15:58:13.628" endtime="20211127 15:58:13.629">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20211127 15:58:13.618" endtime="20211127 15:58:13.629">No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is functionally identical to the example in
+valid_login.robot file.</doc>
+<status status="FAIL" starttime="20211127 15:58:13.609" endtime="20211127 15:58:13.630"/>
+</suite>
+<suite id="s1-s2" name="Invalid" source="C:\Users\HP_Owner\PycharmProjects\python_robotframwork_2\tests\invalid.robot">
+<kw name="Open Browser To Login Page" library="resource" type="SETUP">
+<kw name="Open Browser">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<msg timestamp="20211127 15:58:13.640" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20211127 15:58:13.639" endtime="20211127 15:58:13.640"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20211127 15:58:13.641" endtime="20211127 15:58:13.641"/>
+</kw>
+<kw name="Set Selenium Speed">
+<arg>${DELAY}</arg>
+<status status="NOT RUN" starttime="20211127 15:58:13.644" endtime="20211127 15:58:13.644"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20211127 15:58:13.644" endtime="20211127 15:58:13.644"/>
+</kw>
+<status status="FAIL" starttime="20211127 15:58:13.638" endtime="20211127 15:58:13.645"/>
+</kw>
+<test id="s1-s2-t1" name="Invalid Username">
+<status status="FAIL" starttime="20211127 15:58:13.646" endtime="20211127 15:58:13.647">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s2-t2" name="Invalid Password">
+<status status="FAIL" starttime="20211127 15:58:13.648" endtime="20211127 15:58:13.649">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s2-t3" name="Invalid Username And Password">
+<status status="FAIL" starttime="20211127 15:58:13.649" endtime="20211127 15:58:13.650">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s2-t4" name="Empty Username">
+<status status="FAIL" starttime="20211127 15:58:13.651" endtime="20211127 15:58:13.651">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s2-t5" name="Empty Password">
+<status status="FAIL" starttime="20211127 15:58:13.652" endtime="20211127 15:58:13.653">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<test id="s1-s2-t6" name="Empty Username And Password">
+<status status="FAIL" starttime="20211127 15:58:13.654" endtime="20211127 15:58:13.655">Parent suite setup failed:
+No keyword with name 'Open Browser' found.</status>
+</test>
+<kw name="Close Browser" type="TEARDOWN">
+<msg timestamp="20211127 15:58:13.657" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20211127 15:58:13.657" endtime="20211127 15:58:13.657">No keyword with name 'Close Browser' found.</status>
+</kw>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="FAIL" starttime="20211127 15:58:13.631" endtime="20211127 15:58:13.657">Suite setup failed:
+No keyword with name 'Open Browser' found.
+
+Also suite teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</suite>
+<suite id="s1-s3" name="Valid Login" source="C:\Users\HP_Owner\PycharmProjects\python_robotframwork_2\tests\valid_login.robot">
+<test id="s1-s3-t1" name="Valid Login">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser">
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<msg timestamp="20211127 15:58:13.666" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20211127 15:58:13.666" endtime="20211127 15:58:13.666"/>
+</kw>
+<kw name="Maximize Browser Window">
+<status status="NOT RUN" starttime="20211127 15:58:13.668" endtime="20211127 15:58:13.668"/>
+</kw>
+<kw name="Set Selenium Speed">
+<arg>${DELAY}</arg>
+<status status="NOT RUN" starttime="20211127 15:58:13.670" endtime="20211127 15:58:13.670"/>
+</kw>
+<kw name="Login Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20211127 15:58:13.670" endtime="20211127 15:58:13.670"/>
+</kw>
+<status status="FAIL" starttime="20211127 15:58:13.664" endtime="20211127 15:58:13.671"/>
+</kw>
+<kw name="Input Username" library="resource">
+<arg>demo</arg>
+<status status="NOT RUN" starttime="20211127 15:58:13.671" endtime="20211127 15:58:13.671"/>
+</kw>
+<kw name="Input Password" library="resource">
+<arg>mode</arg>
+<status status="NOT RUN" starttime="20211127 15:58:13.672" endtime="20211127 15:58:13.672"/>
+</kw>
+<kw name="Submit Credentials" library="resource">
+<status status="NOT RUN" starttime="20211127 15:58:13.672" endtime="20211127 15:58:13.672"/>
+</kw>
+<kw name="Welcome Page Should Be Open" library="resource">
+<status status="NOT RUN" starttime="20211127 15:58:13.672" endtime="20211127 15:58:13.672"/>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg timestamp="20211127 15:58:13.674" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20211127 15:58:13.673" endtime="20211127 15:58:13.674">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20211127 15:58:13.663" endtime="20211127 15:58:13.674">No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" starttime="20211127 15:58:13.658" endtime="20211127 15:58:13.675"/>
+</suite>
+<status status="FAIL" starttime="20211127 15:58:13.583" endtime="20211127 15:58:13.677"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="8" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="8" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Glogin">Tests.Glogin</stat>
+<stat pass="0" fail="6" skip="0" id="s1-s2" name="Invalid">Tests.Invalid</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s3" name="Valid Login">Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20211127 15:58:13.614" level="ERROR">Error in file 'C:\Users\HP_Owner\PycharmProjects\python_robotframwork_2\tests\resource.robot' on line 14: Setting variable '${VALID PASSWORD} mode' failed: Invalid variable name '${VALID PASSWORD} mode'.</msg>
+<msg timestamp="20211127 15:58:13.617" level="ERROR">Error in file 'C:\Users\HP_Owner\PycharmProjects\python_robotframwork_2\tests\resource.robot' on line 7: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\HP_Owner\AppData\Local\Programs\Python\Python38\Scripts\robot.exe
+  c:\users\hp_owner\appdata\local\programs\python\python38\python38.zip
+  c:\users\hp_owner\appdata\local\programs\python\python38\DLLs
+  c:\users\hp_owner\appdata\local\programs\python\python38\lib
+  c:\users\hp_owner\appdata\local\programs\python\python38
+  c:\users\hp_owner\appdata\local\programs\python\python38\lib\site-packages</msg>
+<msg timestamp="20211127 15:58:13.633" level="ERROR">Error in file 'C:\Users\HP_Owner\PycharmProjects\python_robotframwork_2\tests\resource.robot' on line 14: Setting variable '${VALID PASSWORD} mode' failed: Invalid variable name '${VALID PASSWORD} mode'.</msg>
+<msg timestamp="20211127 15:58:13.636" level="ERROR">Error in file 'C:\Users\HP_Owner\PycharmProjects\python_robotframwork_2\tests\resource.robot' on line 7: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\HP_Owner\AppData\Local\Programs\Python\Python38\Scripts\robot.exe
+  c:\users\hp_owner\appdata\local\programs\python\python38\python38.zip
+  c:\users\hp_owner\appdata\local\programs\python\python38\DLLs
+  c:\users\hp_owner\appdata\local\programs\python\python38\lib
+  c:\users\hp_owner\appdata\local\programs\python\python38
+  c:\users\hp_owner\appdata\local\programs\python\python38\lib\site-packages</msg>
+<msg timestamp="20211127 15:58:13.660" level="ERROR">Error in file 'C:\Users\HP_Owner\PycharmProjects\python_robotframwork_2\tests\resource.robot' on line 14: Setting variable '${VALID PASSWORD} mode' failed: Invalid variable name '${VALID PASSWORD} mode'.</msg>
+<msg timestamp="20211127 15:58:13.662" level="ERROR">Error in file 'C:\Users\HP_Owner\PycharmProjects\python_robotframwork_2\tests\resource.robot' on line 7: Importing library 'Selenium2Library' failed: ModuleNotFoundError: No module named 'Selenium2Library'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\HP_Owner\AppData\Local\Programs\Python\Python38\Scripts\robot.exe
+  c:\users\hp_owner\appdata\local\programs\python\python38\python38.zip
+  c:\users\hp_owner\appdata\local\programs\python\python38\DLLs
+  c:\users\hp_owner\appdata\local\programs\python\python38\lib
+  c:\users\hp_owner\appdata\local\programs\python\python38
+  c:\users\hp_owner\appdata\local\programs\python\python38\lib\site-packages</msg>
+</errors>
+</robot>
